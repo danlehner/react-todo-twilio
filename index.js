@@ -32,8 +32,12 @@ app.post('/api/messages', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'))
+  res.send(JSON.stringify({ message: "success!"}))
 })
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname+'/client/build/index.html'))
+// })
 
 app.listen(port, () =>
   console.log(`Now listening on http://localhost:${port}`)
