@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+:root {
+  --white: #f8f8f8; 
+  --black: #212121; 
+  --gold: #EFCB68;
+  --red: #f32e45;
+  --light-blue: #add8e6; 
+}
+
+body {
+  background-color: var(--gold);
+}
+
+.app {
+  margin: 50px auto; 
+  width: 50%; 
+}
+
+.list, input {
+  border: 2px solid var(--black); 
+}
+
+.list {
+  margin: 50px 0; 
+  width: 400px;
+  padding: 20px; 
+  background-color: var(--white);
+}
+
+.with {
+  color: var(--white); 
+  text-shadow: 5px 5px var(--black); 
+}
+
+.twilio {
+  color: var(--red);
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', serif;
+}
+
+h1 {
+  font-size: 4em; 
+  text-align: left; 
+  width: 300px; 
+  line-height: 1; 
+  margin: 0; 
+}
+
+ul, 
+.no-items {
+  background-color: var(--light-blue);
+  padding: 20px; 
+}
+
+input, button, .list {
+  box-shadow: 5px 5px var(--black);
+}
+
+.input-row {
+  margin-top: 20px; 
+}
+
+input, button, li, p {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+p, li {
+  color: var(--black); 
+  text-shadow: 1px 1px var(--white); 
+}
+
+li {
+  list-style-type: none;
+  margin-right: 10px; 
+  font-size: 18px; 
+}
+
+input {
+  padding: 10px; 
+}
+
+input::placeholder {
+  color: var(--black);
+}
+
+.add, .send-button {
+  padding: 8px; 
+  margin-left: 10px; 
+  background-color: var(--light-blue); 
+  font-size: 18px; 
+}
+
+.delete-button {
+  padding: 10px; 
+  margin: 2px 0;
+  color: var(--white); 
+  background-color: var(--red);
+}
+
+button {
+  border: 1px solid var(--black); 
+  cursor: pointer;  
+}
+
+.todo-item {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+

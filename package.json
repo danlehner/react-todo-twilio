@@ -13,6 +13,7 @@
     "twilio": "^3.63.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node-env-run index.js", 
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   }
 }
