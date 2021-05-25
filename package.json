@@ -13,6 +13,6 @@
     "twilio": "^3.63.0"
   },
   "scripts": {
-    "start": "node-env-run index.js"
+    "start": "index.js"
   }
 }
