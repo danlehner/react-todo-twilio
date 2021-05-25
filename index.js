@@ -6,8 +6,8 @@ const client = require('twilio')(
   process.env.TWILIO_AUTH_TOKEN
 )
 
-const port = process.env.PORT || 5000
 const app = express()
+
 const path = require('path')
 
 app.use(express.static(path.join(__dirname, 'client/build')))
@@ -31,7 +31,7 @@ app.post('/api/messages', (req, res) => {
   })
 })
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.send(JSON.stringify({ message: "success!"}))
 })
 
@@ -39,6 +39,5 @@ app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname+'/client/build/index.html'))
 // })
 
-app.listen(port, () =>
-  console.log(`Now listening on http://localhost:${port}`)
-);
+const port = process.env.PORT || 5000
+app.listen(port);
