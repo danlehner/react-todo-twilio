@@ -17,6 +17,6 @@
   },
   "scripts": {
     "start": "node-env-run index.js", 
-    "heroku-postbuild": "cd client && yarn && yarn run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   }
 }
