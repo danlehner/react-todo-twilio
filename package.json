@@ -16,7 +16,7 @@
     "twilio": "^3.63.0"
   },
   "scripts": {
-    "start": "node-env-run index.js", 
+    "start": "node index.js", 
     "heroku-postbuild": "cd client && npm install && npm run build"
   }
 }
